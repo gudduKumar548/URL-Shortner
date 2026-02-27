@@ -94,8 +94,8 @@ http://localhost:5000
 
 | Method | Endpoint | Description |
 |--------|----------|------------|
-| POST | `/api/shorten` | Create short URL |
-| GET | `/:shortCode` | Redirect to original URL |
+| POST | `/api/url` | Create short URL |
+| GET | `/:shortId` | Redirect to original URL |
 
 ---
 
