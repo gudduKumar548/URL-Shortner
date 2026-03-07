@@ -6,7 +6,7 @@ const URL = require("./model/url");
 const app = express();
 const port = 8001;
 
-connectMongoDb("mongodb://127.0.0.1:27017/URL-shortner")
+connectMongoDb("mongodb://localhost/URL-shortner")
     .then(() => { console.log("mongo connected") })
     .catch((err) => { console.log("mongo err", err) })
 
@@ -37,4 +37,5 @@ app.get("/:shortId", async (req, res) => {
 
 app.listen(port, () => {
     console.log("server started");
+
 })
